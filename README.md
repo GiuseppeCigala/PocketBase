@@ -1,4 +1,4 @@
-An implementation of PocketBase with Alpine.js and Tailwind.css.
+## An implementation of PocketBase with Alpine.js and Tailwind.css.
 A simple table with C.R.U.D. functionalities.
 You can add/edit/delete a record and upload a photo.
 The table support search, sort and pagination functions.
