@@ -3,7 +3,7 @@
 ### A simple table with C.R.U.D. functionalities:
 
 - you can add/edit/delete a record and upload a photo;
-- the table support search, sort and pagination functions;
+- the table supports **search**, **sort** and **pagination** functions;
 - enter in the **Pocketbase** folder and type `"./pocketbase serve"` to start the server;
 - click on the table columns to sort the rows;
 - click on the photo to open it in a new panel;
