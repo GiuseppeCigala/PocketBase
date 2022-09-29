@@ -7,7 +7,7 @@
 - enter in the **Pocketbase** folder and type `"./pocketbase serve"` to start the server;
 - click on the table columns to sort the rows;
 - click on the photo to open it in a new panel;
-- with the dropdown menu, choose the pagination (5/10/15/20 items for page).
+- with the dropdown menu, choose the pagination (5/10/15/20 items per page).
 
 **Main Panel**
 \
