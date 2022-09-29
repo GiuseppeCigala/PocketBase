@@ -9,7 +9,15 @@
 - click on the photo to open it in a new panel;
 - with the dropdown menu, choose the pagination (5/10/15/20 items per page).
 
-**Main Panel**
+Tested with PocketBase vers. 0.7.6
+\
+\
+**Login**: 
+- url: http://127.0.0.1:8090/_/#/login
+- e-mail: admin@example.com
+- password: pocketbase
+
+**Main Panel** (http://127.0.0.1:8090)
 \
 \
 <img width="1647" alt="Schermata 2022-09-28 alle 18 26 48" src="https://user-images.githubusercontent.com/62054942/192834597-b59e22a8-e97e-4330-87a3-3c1c85ef3e71.png">
