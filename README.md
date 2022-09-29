@@ -31,3 +31,9 @@
 \
 \
 <img width="1938" alt="Schermata 2022-09-28 alle 18 28 48" src="https://user-images.githubusercontent.com/62054942/192835004-1821d059-c581-49d1-a083-09062af2118b.png">
+\
+\
+**Links:**
+- https://pocketbase.io
+- https://alpinejs.dev
+- https://tailwindcss.com
