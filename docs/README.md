@@ -20,31 +20,31 @@ Tested with PocketBase vers. 0.7.6
 **Main Panel** (http://127.0.0.1:8090)
 \
 \
-:::image type="content" source="img/1.png" alt-text="Main Panel":::
+![Main Panel](img/1.png)
 \
 \
 **Add New Item**
 \
 \
-:::image type="content" source="img/2.png" alt-text="Add New Item":::
+![Add New Item](img/2.png)
 \
 \
 **Update Item**
 \
 \
-:::image type="content" source="img/3.png" alt-text="Update Item":::
+![Update Item](img/3.png)
 \
 \
 **Add Attachments**
 \
 \
-:::image type="content" source="img/4.png" alt-text="Add Attachments":::
+![Add Attachments](img/4.png)
 \
 \
 **PocketBase**
 \
 \
-:::image type="content" source="img/5.png" alt-text="PocketBase":::
+![PocketBase](img/5.png)
 \
 \
 **Links:**
