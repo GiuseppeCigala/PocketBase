@@ -28,7 +28,14 @@ function tableData() {
         this.itemsPerPage,
         {
           sort: this.sortOrder + this.sortCol,
-          filter: 'name~"' + this.search + '" || area~"' + this.search + '" || note~"' + this.search + '"',
+          filter:
+            'name~"' +
+            this.search +
+            '" || area~"' +
+            this.search +
+            '" || note~"' +
+            this.search +
+            '"',
         }
       );
 
@@ -39,8 +46,12 @@ function tableData() {
     },
 
     async deleteRow(id) {
-      await client.records.delete(collection, id);
-      this.fetchTableRows();
+      try {
+        await client.records.delete(collection, id);
+        this.fetchTableRows();
+      } catch (error) {
+        alert("Failed to delete record. Make sure first to delete the related attachments.");
+      }
     },
 
     async loadRow(id) {
@@ -62,7 +73,7 @@ function tableData() {
     },
 
     sortTableRows() {
-      this.sortOrder = this.sortOrder == '-' ? '+' : '-';
+      this.sortOrder = this.sortOrder == "-" ? "+" : "-";
       this.fetchTableRows();
     },
 
