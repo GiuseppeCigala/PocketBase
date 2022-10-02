@@ -44,7 +44,7 @@ Tested with PocketBase vers. 0.7.6
 **PocketBase**
 \
 \
-:::image type="content" source="img/5.png" alt-text="PockeBase":::
+:::image type="content" source="img/5.png" alt-text="PocketBase":::
 \
 \
 **Links:**
