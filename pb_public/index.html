@@ -12,14 +12,15 @@
     </head>
 
     <body>
-        <main class="lg:mt-12" x-data="tableData()" x-init="page = 1; itemsPerPage = 5; sortCol = 'created'; sortOrder = '-'; fetchTableRows()">
+        <main class="lg:mt-12" x-data="tableData()"
+            x-init="page = 1; itemsPerPage = 5; sortCol = 'created'; sortOrder = '-'; fetchTableRows()">
             <section class="container mx-auto p-8 m-6 bg-gray-700 rounded-xl shadow-md">
                 <h1 class="text-md lg:text-4xl font-bold text-white">PocketBase + Alpine.js + Tailwind.css</h1>
                 <h2 class="text-md lg:text-2xl text-gray-400">Demo C.R.U.D. Table</h2>
             </section>
             <section class="container mx-auto p-2 bg-gray-200 rounded-xl shadow-md">
-                <div class="grid grid-cols-4">
-                    <div class="pt-2 ml-5 col-span-3" @keydown.escape="showModal = false">
+                <div class="grid grid-cols-8">
+                    <div class="pt-2 ml-5 col-span-6" @keydown.escape="showModal = false">
                         <button
                             class="p-2 m-1 text-sm rounded shadow bg-green-200 hover:bg-green-400 text-slate-800 flex justify-center"
                             type="button" @click="showModal = true; editModal = false; resetForm()"><svg class="w-5 h-5"
@@ -30,7 +31,7 @@
                                 </path>
                             </svg><span class="block text-sm pl-2">Add Subject</span></button>
                     </div>
-                    <div class="p-2 mr-5">
+                    <div class="p-2 mr-5 col-span-2">
                         <div class="input-group flex">
                             <input type="search" x-model="search" @input.debounce="fetchTableRows()"
                                 placeholder="Search..."
@@ -45,16 +46,20 @@
                 <table class="table-fixed border-collapse w-full text-base text-center text-gray-500">
                     <thead class="text-base text-gray-800 uppercase bg-gray-300">
                         <tr>
-                            <th @click="sortCol = 'photo'; sortTableRows()" scope="col" class="p-4 border cursor-pointer select-none">
-                                photo
+                            <th @click="sortCol = 'photo'; sortTableRows()" scope="col"
+                                class="p-4 border cursor-pointer select-none">
+                                Photo
                             </th>
-                            <th @click="sortCol = 'name'; sortTableRows()" scope="col" class="p-4 border w-1/4 cursor-pointer select-none">
-                                name
+                            <th @click="sortCol = 'name'; sortTableRows()" scope="col"
+                                class="p-4 border w-1/4 cursor-pointer select-none">
+                                Name
                             </th>
-                            <th @click="sortCol = 'area'; sortTableRows()" scope="col" class="p-4 border w-1/4 cursor-pointer select-none">
+                            <th @click="sortCol = 'area'; sortTableRows()" scope="col"
+                                class="p-4 border w-1/4 cursor-pointer select-none">
                                 Area
                             </th>
-                            <th @click="sortCol = 'note'; sortTableRows()" scope="col" class="p-4 border w-1/4 cursor-pointer select-none">
+                            <th @click="sortCol = 'note'; sortTableRows()" scope="col"
+                                class="p-4 border w-1/4 cursor-pointer select-none">
                                 Note
                             </th>
                             <th scope="col" class="p-4 border">
@@ -92,7 +97,16 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
                                             </path>
-                                        </svg></button></td>
+                                        </svg></button>
+                                    </button><button
+                                        class="p-2 m-1 text-sm rounded shadow bg-orange-200 hover:bg-orange-400 text-slate-800"
+                                        @click="localStorage.setItem('subject_id', soggetto.id); window.location.replace('attachments.html')"><svg class="w-4 h-" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13">
+                                            </path>
+                                        </svg></button>
                                 </td>
                             </tr>
                         </template>
@@ -138,14 +152,14 @@
                                             placeholder="" required>
                                     </div>
                                     <div>
-                                        <label for="Area"
+                                        <label for="area"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Area</label>
                                         <input type="text" x-model="area"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                             placeholder="" required>
                                     </div>
                                     <div>
-                                        <label for="Note"
+                                        <label for="note"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Note</label>
                                         <textarea type="text" x-model="note"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -237,5 +251,4 @@
             </section>
         </main>
     </body>
-
 </html>
