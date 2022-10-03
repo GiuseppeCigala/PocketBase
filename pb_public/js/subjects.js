@@ -2,7 +2,7 @@ const address = "http://127.0.0.1:8090";
 const collection = "subjects";
 const client = new PocketBase(address);
 
-function tableData() {
+function pageData() {
   return {
     search: "",
     sortCol: "",
